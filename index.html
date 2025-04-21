@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlackWings</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="flex-row-spaced">
+      <h1>Black<span class="text-gold">Wings</span></h1>
+
+      <!-- Botão do menu hambúrguer -->
+      <button id="menu-btn" class="menu-btn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
+
+      <nav id="menu" class="menu">
+        <ul class="list flex-row-spaced">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#gallery">Galeria</a></li>
+          <li onmouseover="changeBGofBTN('.list', '.btn')">
+            <a href="#schedule"><button class="bg-gold btn">Agendar</button></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="hero-body">
+        <div class="hero-content">
+          <h2>Seja bem-vindo a BlackWings</h2>
+          <p>
+            Oferecemos cortes clássicos e modernos, barba, tratamentos capilares
+            e muito mais em um ambiente sofisticado e exclusivo.
+          </p>
+          <a href="#schedule"><button><strong>Agendar</strong></button></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="servicos">
+      <div class="title-service">
+        <h2>Nossos Serviços</h2>
+        <p>Oferecemos uma experiência completa de cuidados masculinos</p>
+      </div>
+      <div class="grid-services">
+        <div class="servico-content">
+          <div class="servico">
+            <img src="img/corte-cabelo.jpg" alt="Serviço 1" />
+            <h3>Corte de Cabelo</h3>
+            <p>
+              Cortes clássicos ou modernos executados com precisão e atenção aos
+              detalhes.
+            </p>
+          </div>
+          <div class="servico">
+            <img src="img/corte.barba.jpg" alt="Serviço 2" />
+            <h3>Barba</h3>
+            <p>
+              Modelagem, aparo e tratamento completo para sua barba, incluindo
+              toalha quente e produtos premium.
+            </p>
+          </div>
+          <div class="servico">
+            <img src="img/corte-completo.jpg" alt="Serviço 3" />
+            <h3>Combo Completo</h3>
+            <p>
+              Corte + barba + sobrancelha com tratamentos especiais e bebida
+              cortesia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-container">
+        <div class="about-image">
+          <img
+            src="img/barbearia.jpg"
+            alt="Barbearia"
+            width="400"
+            height="400"
+          />
+        </div>
+        <div class="about-content">
+          <h2>Sobre Nossa Barbearia</h2>
+          <p>
+            Fundada em 2015, nossa barbearia combina técnicas tradicionais com
+            tendências modernas para oferecer o melhor em serviços para homens
+            exigentes.
+          </p>
+          <p>
+            Contamos com uma equipe de profissionais altamente qualificados,
+            ambiente aconchegante com decoração vintage e produtos de primeira
+            linha para garantir resultados excepcionais.
+          </p>
+          <p>
+            Mais do que uma barbearia, somos um espaço onde você pode relaxar,
+            conversar e sair com visual renovado e autoestima elevada.
+          </p>
+          <a href="#services" class="btn" style="margin-top: 20px"
+            >CONHEÇA NOSSOS SERVIÇOS</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="title-service">
+        <h2>Galeria</h2>
+        <p>Confira nossa galeria de imagens</p>
+      </div>
+      <div class="grid-gallery">
+        <div class="gallery-item">
+          <img src="img/corte-fade.jgp.png" alt="Imagem 6" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/corte-afro.jpg" alt="Imagem 2" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/corte-barba-italiana.jpg" alt="Imagem 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/corte-barba-ancora.jpg" alt="Imagem 4" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/barba-cheia.jgp.png" alt="Imagem 5" />
+        </div>
+        <div class="gallery-item">
+          <img src="img/corte-completo.png" alt="Imagem 6" />
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+      <div class="title-pricing">
+        <h2>Preços</h2>
+        <p>Conheça nossos preços</p>
+      </div>
+      <div class="grid-pricing">
+        <div class="pricing-item">
+          <h3>Básico</h3>
+          <p>R$ 50,00</p>
+          <ul>
+            <li>Corte de cabelo</li>
+            <li>lavagem</li>
+            <li>Finalização</li>
+          </ul>
+          <a href="#schedule"><button>Agendar</button></a>
+        </div>
+        <div class="pricing-item">
+          <h3>Completo</h3>
+          <p>R$ 100,00</p>
+          <ul>
+            <li>Corte de cabelo</li>
+            <li>Barba Completa</li>
+            <li>Lavagem</li>
+            <li>Finalização</li>
+          </ul>
+          <a href="#schedule"><button>Agendar</button></a>
+        </div>
+        <div class="pricing-item">
+          <h3>Premium</h3>
+          <p>R$ 200,00</p>
+          <ul>
+            <li>Corte de Cabelo</li>
+            <li>Barba Completa</li>
+            <li>Tratamento Capilar</li>
+            <li>Massagem</li>
+            <li>Bebida Cortesia</li>
+          </ul>
+          <a href="#schedule"><button>Agendar</button></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule" class="schedule">
+      <h2>Agende seu Horário</h2>
+      <p>Garanta sua vaga com nossos especialistas</p>
+      <form>
+        <input type="text" placeholder="Nome" />
+        <input type="tel" placeholder="Telefone" />
+        <select name="services" id="services">
+          <option value="basico">
+            Corte-Básico
+          </option>
+          <option value="Consultoria de Games">Corte-Completo</option>
+          <option value="Eventos de Games">Corte-Premium</option>
+        </select>
+        <textarea placeholder="Observaçoes"></textarea>
+        <button>Agendar</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h4 class="mb-4">Black<span class="text-gold">Wings</span></h4>
+            <p>Oferecendo o melhor em estilo e cuidado masculino desde 2015.</p>
+            <div class="mt-4">
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h5 class="mb-4">Links Rápidos</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#home" class="text-white text-decoration-none">Home</a>
+              </li>
+              <li class="mb-2">
+                <a href="#servicos" class="text-white text-decoration-none"
+                  >Serviços</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#about" class="text-white text-decoration-none"
+                  >Sobre</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#gallery" class="text-white text-decoration-none"
+                  >Galeria</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#schedule" class="text-white text-decoration-none"
+                  >Agendamento</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h5 class="mb-4">Newsletter</h5>
+            <p>Inscreva-se para receber novidades e promoções exclusivas:</p>
+            <form class="mt-3">
+              <div class="input-group mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Seu e-mail"
+                />
+                <button class="btn btn-gold" type="button">Inscrever</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr class="mt-4 mb-4 bg-secondary" />
+        <div class="text-center">
+          <p class="mb-0">
+            &copy; 2025 Barbearia BlackWings - Todos os direitos reservados
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuBtn = document.getElementById("menu-btn");
+        const menu = document.getElementById("menu");
+
+        menuBtn.addEventListener("click", () => {
+          menu.classList.toggle("open");
+          menuBtn.classList.toggle("active");
+        });
+      });
+
+      // Adicione após o código existente
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
