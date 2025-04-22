@@ -425,7 +425,7 @@ header {
   left: 0;
   width: 60px;
   height: 3px;
-  background-color: #dbad2d; /* Cor marrom dourado, comum em barbearias */
+  background-color: #dbad2d; /* Cor marrom dourado */
 }
 
 .about-content p {
@@ -437,8 +437,7 @@ header {
 .btn {
   display: inline-block;
   padding: 12px 25px;
-  background-color: #dbad2d; /* Cor marrom dourado, comum em barbearias */
-  color: white;
+  background-color: #dbad2d; /* Cor marrom dourado */
   text-decoration: none;
   border-radius: 4px;
   font-weight: bold;
@@ -447,7 +446,6 @@ header {
 }
 
 .btn:hover {
-  background-color: #000; /*  Cor marrom dourado mais escura */
   transform: translateY(-2px);
 }
 
